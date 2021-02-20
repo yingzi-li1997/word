@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增删改查</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+   <script src="./jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="topbox" style="width: 80%;">
+            <form class="bs-example bs-example-form" role="form" style="float: left;width: 50%;">
+                <div class="input-group">
+                    <input type="text" class="form-control ss">
+                    <span class="input-group-addon search"><span class="glyphicon glyphicon-search"></span></span>
+                </div>
+                <br>
+            </form>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="float: left;margin-left: 50px;">增加按钮</button>
+        </div>
+    </div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="firstname" class="col-sm-2 control-label">昵称</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="firstname" placeholder="请输入昵称">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname" class="col-sm-2 control-label">年龄</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="lastname" placeholder="请输入年龄">
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交更改</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+</body>
+<script src="./jquery.js"></script>
+</html>
